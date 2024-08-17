@@ -3,7 +3,10 @@
 namespace Related_Post\Includes;
 
 class Assets{
+    function __construct(){
+        add_action( 'wp_enqueue_scripts', [$this, 'load_assets'] );
+    }
     function load_assets(){
-        wp_register_style( 'my_css', 	plugins_url( 'style.css', 	 __FILE__ ), false,   $my_css_ver );
+        wp_register_style( 'related_post_css', 	RELATEDPOST__ASSETS . 'plugin.css', [], false, 'all'  );
     }
 }

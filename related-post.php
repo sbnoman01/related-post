@@ -20,9 +20,10 @@
 
 define( 'RELATEDPOST_VERSION', '1.0.0' );
 define( 'RELATEDPOST__FILE', plugin_dir_path( __FILE__ ) );
+define( 'RELATEDPOST__INCLUDE', RELATEDPOST__FILE . 'includes/' );
+define( 'RELATEDPOST__TEMPLATE', RELATEDPOST__FILE . 'template/' );
 define( 'RELATEDPOST__URL', plugins_url( '/', __FILE__ ) );
-define( 'RELATEDPOST__ASSETS', RELATEDPOST__URL . 'assets' );
-// define( 'RELATEDPOST__FILE', __FILE__ );
+define( 'RELATEDPOST__ASSETS', RELATEDPOST__URL . 'assets/' );
 
 // check pluign compleatablity
 if( !version_compare('7.4', '>=') ){
@@ -30,7 +31,7 @@ if( !version_compare('7.4', '>=') ){
 }else{
 
     // Load the file
-    require_once RELATEDPOST__FILE . '/includes/plugin.php';
+    require_once RELATEDPOST__FILE . '/includes/related-post-plugin.php';
     
     // Create instance
     if( class_exists('\Related_Post\Includes\Plugin') ){
