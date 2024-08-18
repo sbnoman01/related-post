@@ -130,9 +130,12 @@
   top: 0px
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto
+.m-0 {
+  margin: 0px
+}
+
+.\!m-0 {
+  margin: 0px !important
 }
 
 .mb-2 {
@@ -173,6 +176,10 @@
 
 .grid {
   display: grid
+}
+
+.contents {
+  display: contents
 }
 
 .h-5 {
@@ -249,10 +256,6 @@
 .bg-indigo-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(79 70 229 / var(--tw-bg-opacity))
-}
-
-.p-5 {
-  padding: 1.25rem
 }
 
 .px-4 {
@@ -340,6 +343,14 @@
   color: rgb(255 255 255 / var(--tw-text-opacity))
 }
 
+.no-underline {
+  text-decoration-line: none
+}
+
+.\!no-underline {
+  text-decoration-line: none !important
+}
+
 .opacity-25 {
   opacity: 0.25
 }
@@ -388,18 +399,10 @@
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr))
   }
-
-  .sm\:p-10 {
-    padding: 2.5rem
-  }
 }
 
 @media (min-width: 768px) {
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr))
-  }
-
-  .md\:p-16 {
-    padding: 4rem
   }
 }
