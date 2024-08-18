@@ -2,7 +2,7 @@
     // Create cpt loop, with a have_posts() check!
     if ($query->have_posts()) :
     ?>
-        <div class="max-w-screen-xl">
+        <div class="max-w-screen-xl border-t-4 border-indigo-500 mt-10 pb-10">
             <div class="border-b mb-5 flex justify-between text-sm">
                 <div class="text-indigo-600 flex items-center pb-2 pr-2 border-b-2 border-indigo-600 uppercase">
                     <svg class="h-6 mr-3" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
