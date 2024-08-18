@@ -49,9 +49,11 @@
                 <div class="px-6 py-4 mb-auto">
                     <a href="<?php echo get_the_permalink(); ?>"
                         class="!no-underline font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2"><?php the_title(); ?></a>
+                    <?php if( has_excerpt() ): ?>
                     <p class="text-gray-500 text-sm">
                         <?php echo wp_trim_words( get_the_excerpt(), 10, '...' ) ?>
                     </p>
+                    <?php endif; ?>
                 </div>
                 <div class="px-6 py-3 flex flex-row items-center justify-between bg-gray-100">
                     <span href="#" class="py-1 text-xs font-regular text-gray-900 mr-1 flex flex-row items-center">
